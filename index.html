@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="icon" href="assets/icons/favicon.png" />
+	<link rel="manifest" href="assets/css/manifest.webmanifest" />
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<input type="text" id="display" disabled value="0"/>
+			<div id="table">
+				<div>
+					<span data-key-value="backspace"><button class="" id="" onclick="clearDisplay()" >C</button></span></span>
+					<span data-key-value="shift+%"><button class="" id="" onclick="placePercent()" >%</button></span></span>
+					<span data-key-value="delete"><button class="" id="" onclick="deleteOneDisplay()" >Del</button></span></span>
+					<span data-key-value="/"><button class="" id="" onclick="operation(this.innerText)" >/</button></span></span>
+				</div>
+				<div>
+					<span data-key-value="7"><button class="" id="" onclick="putNum(this.innerText)">7</button></span>
+					<span data-key-value="8"><button class="" id="" onclick="putNum(this.innerText)">8</button></span>
+					<span data-key-value="9"><button class="" id="" onclick="putNum(this.innerText)">9</button></span>
+					<span data-key-value="*"><button class="" id="" onclick="operation(this.innerText)">&times;</button></span>
+				</div>
+				<div>
+					<span data-key-value="4"><button class="" id="" onclick="putNum(this.innerText)">4</button></span>
+					<span data-key-value="5"><button class="" id="" onclick="putNum(this.innerText)">5</button></span>
+					<span data-key-value="6"><button class="" id="" onclick="putNum(this.innerText)">6</button></span>
+					<span data-key-value="-"><button class="" id="" onclick="operation(this.innerText)">-</button></span>
+				</div>
+				<div>
+					<span data-key-value="1"><button class="" id="" onclick="putNum(this.innerText)">1</button></span>
+					<span data-key-value="2"><button class="" id="" onclick="putNum(this.innerText)">2</button></span>
+					<span data-key-value="3"><button class="" id="" onclick="putNum(this.innerText)">3</button></span>
+					<span data-key-value="+"><button class="" id="" onclick="operation(this.innerText)">+</button></span>
+				</div>
+				<div>
+					<span  data-key-value="shift+0"><button class="" id="" onclick="putNum(this.innerText)">00</button></span>
+					<span  data-key-value="0"><button class="" id="" onclick="putNum(this.innerText)">0</button></span>
+					<span  data-key-value="."><button class="" id="" onclick="placeDecimal()">.</button></span>
+					<span  data-key-value="enter"><button class="" id="" onclick="calculateResult()">=</button></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
