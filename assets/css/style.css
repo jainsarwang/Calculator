@@ -8,7 +8,8 @@ html, body{
     margin: 0;
     padding: 0;
     position: fixed;
-    background: linear-gradient(#ff9800, #fff,#4caf50);
+    //background: linear-gradient(#ff9800, #fff,#4caf50);
+    background: ;#e76a10
     overflow: auto;
 }
 ::-webkit-scrollbar{
